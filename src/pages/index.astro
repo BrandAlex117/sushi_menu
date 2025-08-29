@@ -1,5 +1,7 @@
 ---
 import '../styles/style.css';
+import '../styles/sectionsGrid.css';
+import GridFood from '../templates/gridFood.astro';
 
 const menuItems = [
   {
@@ -39,163 +41,7 @@ const menuItems = [
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Sakura Sushi - Authentic Japanese Cuisine</title>
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-			}
-
-			body {
-				font-family: 'Georgia', serif;
-				line-height: 1.6;
-				color: #333;
-				background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-			}
-
-			.container {
-				max-width: 1200px;
-				margin: 0 auto;
-				padding: 0 20px;
-			}
-
-			header {
-				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-				color: white;
-				text-align: center;
-				padding: 4rem 0;
-				margin-bottom: 3rem;
-			}
-
-			h1 {
-				font-size: 3.5rem;
-				margin-bottom: 0.5rem;
-				text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-			}
-
-			.subtitle {
-				font-size: 1.2rem;
-				opacity: 0.9;
-				font-style: italic;
-			}
-
-			.menu-section {
-				background: white;
-				margin: 2rem 0;
-				padding: 2rem;
-				border-radius: 15px;
-				box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-				transition: transform 0.3s ease;
-			}
-
-			.menu-section:hover {
-				transform: translateY(-5px);
-			}
-
-			.category-title {
-				font-size: 2rem;
-				color: #667eea;
-				margin-bottom: 1.5rem;
-				text-align: center;
-				position: relative;
-			}
-
-			.category-title::after {
-				content: '';
-				display: block;
-				width: 50px;
-				height: 3px;
-				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-				margin: 10px auto;
-				border-radius: 2px;
-			}
-
-			.menu-grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-				gap: 1.5rem;
-			}
-
-			.menu-item {
-				padding: 1.5rem;
-				border: 2px solid #f0f0f0;
-				border-radius: 10px;
-				transition: all 0.3s ease;
-				background: #fafafa;
-			}
-
-			.menu-item:hover {
-				border-color: #667eea;
-				background: white;
-				transform: scale(1.02);
-			}
-
-			.item-header {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				margin-bottom: 0.5rem;
-			}
-
-			.item-name {
-				font-size: 1.3rem;
-				font-weight: bold;
-				color: #333;
-			}
-
-			.item-price {
-				font-size: 1.2rem;
-				font-weight: bold;
-				color: #764ba2;
-			}
-
-			.item-description {
-				color: #666;
-				font-style: italic;
-				line-height: 1.4;
-			}
-
-			footer {
-				background: #333;
-				color: white;
-				text-align: center;
-				padding: 2rem 0;
-				margin-top: 3rem;
-			}
-
-			.contact-info {
-				display: flex;
-				justify-content: center;
-				gap: 2rem;
-				margin-top: 1rem;
-				flex-wrap: wrap;
-			}
-
-			.contact-item {
-				display: flex;
-				align-items: center;
-				gap: 0.5rem;
-			}
-
-			@media (max-width: 768px) {
-				h1 {
-					font-size: 2.5rem;
-				}
-
-				.menu-grid {
-					grid-template-columns: 1fr;
-				}
-
-				.contact-info {
-					flex-direction: column;
-					gap: 1rem;
-				}
-
-				.container {
-					padding: 0 15px;
-				}
-			}
-		</style>
+		
 	</head>
 	<body>
     <div class="menu-container">
@@ -210,6 +56,8 @@ const menuItems = [
                 </div>
             </div>
         </div>
+
+        <GridFood />
         
         <!-- Makis Rolls Section -->
         <div class="section">
