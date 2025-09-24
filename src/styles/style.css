@@ -9,13 +9,27 @@
   src: url(../styles/fonts/go3v2.ttf) format('truetype');
 }
 
-* {
+*  {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1, p, text {
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'asianFont', sans-serif;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+p {
+  font-family: 'asianFont', sans-serif;
+}
+
+text {
   font-family: 'asianFont', sans-serif;
 }
 
@@ -26,7 +40,12 @@ body {
   line-height: 1.4;
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+.orange {
+  color: #ff6600;
 }
 
 .menu-container {
@@ -77,6 +96,12 @@ body {
   opacity: 0.6;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo-section {
   position: relative;
   z-index: 10;
@@ -84,7 +109,6 @@ body {
 
 .makis-title {
   font-family: 'asianFont', sans-serif;
-  font-size: 48px;
   color: #2c2c2c;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
