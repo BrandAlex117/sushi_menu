@@ -2,16 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@400;600;700&display=swap");
+
 @font-face {
-  font-family: "asianFont";
-  src: url(../styles/fonts/go3v2.ttf) format("truetype");
+  font-family: 'asianFont';
+  src: url(../styles/fonts/go3v2.ttf) format('truetype');
 }
 
-* {
+*  {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 1.2;
 }
 
 html {
@@ -20,47 +21,20 @@ html {
 }
 
 h1 {
-  font-family: "asianFont", sans-serif;
-  font-size: clamp(1rem, 6vw, 1.5rem) !important;
-  letter-spacing: 2px;
-}
-
-h2 {
-  font-family: "asianFont", sans-serif;
-  font-size: clamp(1rem, 4vw, 1.5rem) !important;
-  letter-spacing: 1px;
-}
-
-p {
-  font-family: "asianFont", sans-serif;
-  font-size: clamp(1rem, 5vw, 1.5rem)!important;
-}
-
-.titleMenu{
-  padding: 2px;
-}
-
-.textMenu {
-  color: #f7931e;
-  text-decoration: dashed underline;
-  text-underline-offset: 4px;
-}
-
-.priceMenu {
-  float: right;
-  font-size: 1.2rem;
-  color: #2c2c2c;
-}
-
-
-p {
-  letter-spacing: 1px;
-  font-family: "asianFont", sans-serif;
+  font-family: 'asianFont', sans-serif;
   font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
+p {
+  font-family: 'asianFont', sans-serif;
+}
+
+text {
+  font-family: 'asianFont', sans-serif;
+}
+
 body {
-  font-family: "asianFont", sans-serif;
+  font-family: 'asianFont', sans-serif;
   background-color: #f5f5f5;
   color: #333;
   line-height: 1.4;
@@ -82,7 +56,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  background: linear-gradient(135deg, #dfdcdc 0%, #f7931e 100%);
   position: relative;
   overflow: hidden;
   padding: 30px 20px;
@@ -97,26 +71,26 @@ body {
   width: 400px;
   height: 400px;
   background: conic-gradient(
-    #ff6b35 0deg 18deg,
-    #f5f5f5 18deg 36deg,
+    #ffffff 0deg 18deg,
+    #ffffff 18deg 36deg,
     #ff6b35 36deg 54deg,
-    #f5f5f5 54deg 72deg,
+    #ffffff 54deg 72deg,
     #ff6b35 72deg 90deg,
-    #f5f5f5 90deg 108deg,
+    #ffffff 90deg 108deg,
     #ff6b35 108deg 126deg,
-    #f5f5f5 126deg 144deg,
+    #ffffff 126deg 144deg,
     #ff6b35 144deg 162deg,
-    #f5f5f5 162deg 180deg,
+    #ffffff 162deg 180deg,
     #ff6b35 180deg 198deg,
-    #f5f5f5 198deg 216deg,
+    #ffffff 198deg 216deg,
     #ff6b35 216deg 234deg,
-    #f5f5f5 234deg 252deg,
+    #ffffff 234deg 252deg,
     #ff6b35 252deg 270deg,
-    #f5f5f5 270deg 288deg,
+    #ffffff 270deg 288deg,
     #ff6b35 288deg 306deg,
-    #f5f5f5 306deg 324deg,
+    #ffffff 306deg 324deg,
     #ff6b35 324deg 342deg,
-    #f5f5f5 342deg 360deg
+    #ffffff 342deg 360deg
   );
   border-radius: 50%;
   opacity: 0.6;
@@ -134,7 +108,7 @@ body {
 }
 
 .makis-title {
-  font-family: "asianFont", sans-serif;
+  font-family: 'asianFont', sans-serif;
   color: #2c2c2c;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
