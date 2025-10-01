@@ -3,6 +3,9 @@ import '../styles/style.css';
 import '../styles/sectionsGrid.css';
 import GridFood from '../components/gridFood.astro';
 import MakisFood from '../components/makisSection.astro'; 
+import { Image } from 'astro:assets';
+import chopperImage from '../images/chopper.png'
+
 
 const menuItems = [
   {
@@ -47,15 +50,11 @@ const menuItems = [
 	<body>
     <div class="menu-container">
         <!-- Header -->
-        <div class="header">
-            <div class="sunburst"></div>
-            <div class="logo-section">
-                <div class="makis-title">MAKIS</div>
-                <div class="sushi-culishi-logo">
-                    <div class="character"></div>
-                    <div class="brand-name">SUSHI<br>CULISHI</div>
-                </div>
-            </div>
+        <div class="">
+          <Image 
+            src={chopperImage}
+            alt="Chopper logo Sushi Culishi"
+          />            
         </div>
 
         <GridFood />
