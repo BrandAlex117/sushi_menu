@@ -1,10 +1,11 @@
 ---
 import '../styles/style.css';
 import '../styles/sectionsGrid.css';
+import '../styles/text.css';
 import GridFood from '../components/gridFood.astro';
 import MakisFood from '../components/makisSection.astro'; 
 import { Image } from 'astro:assets';
-import chopperImage from '../images/chopper.png'
+import chopperImage from '../images/chopperLogoEdit.png'
 
 
 const menuItems = [
@@ -41,20 +42,27 @@ const menuItems = [
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+
+    <script src="https://unpkg.com/swup@4"></script>
+
 		<title>Sushi Culishi - Authentic Japanese Cuisine</title>
 		
 	</head>
 	<body>
     <div class="menu-container">
         <!-- Header -->
-        <div class="">
+        <div class="header">
           <Image 
+            class="logo"
             src={chopperImage}
             alt="Chopper logo Sushi Culishi"
-          />            
+          />          
+          <div class="sunburst"></div>
+            
         </div>
 
         <GridFood />
@@ -71,5 +79,5 @@ const menuItems = [
         <!-- Instagram Section -->
         
     </div>
-</body>
+  </body>
 </html>
