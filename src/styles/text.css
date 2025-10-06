@@ -23,5 +23,5 @@ p {
 }
 
 .priceMenu {
-  font-size: clamp(1rem, 4vw, 1.5rem)!important;
+  font-size: clamp(1rem, 5vw, 1.5rem)!important;
 }
