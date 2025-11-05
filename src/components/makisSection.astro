@@ -1,71 +1,13 @@
 ---
 import Content from "../layouts/Content.astro";
+import { getEntry } from "astro:content";
+
+const makisData = await getEntry('menu', 'makis');
 ---
 
-<Content>
-  <div class="div2 border-2 text-center w-full h-[10%] bg-[#f05d08] border-black p-1 flex-col center overflow-hidden"> 
-    <h1 class="center h-auto font-bold text-white">MONCHIS ROLLOS</h1>
-    <h2 class="center h-auto text-white">Inspirados en los personajes de One Piece</h2>
-</div>
-
-  <div class="menu-item">
-    <div class="item-details">
-      <h3 class="item-name">LUFFY ROLL</h3>
-      <p class="item-type">(MAR Y TIERRA)</p>
-      <p class="item-description">
-        ARROZ SOBRE NORI, RELLENO DE QUESO CREMA, AGUACATE, GUISO DE ARRACHERA,
-        CAMARÓN Y PEPINO. SALSA: TAMPICO, ANGUILA, CHIPOTLE
-      </p>
-      <div class="item-price">$150</div>
-    </div>
-  </div>
-
-  <div class="menu-item">
-    <div class="item-details">
-      <h3 class="item-name">ZORO ROLL</h3>
-      <p class="item-type">(ARRACHERA)</p>
-      <p class="item-description">
-        ROLLO CON ARROZ, QUESO GOUDA, AGUACATE, CHILE TOREADOS Y GUISO DE
-        ARRACHERA. SALSA: CHIPOTLE Y QUESO CHIPOTLE GRATINADO ARROZ SOBRE NORI,
-        RELLENO DE QUESO CREMA, AGUACATE
-      </p>
-      <div class="item-price">$150</div>
-    </div>
-  </div>
-
-  <div class="menu-item">
-    <div class="item-details">
-      <h3 class="item-name">NAMI ROLL</h3>
-      <p class="item-type">(CAMARÓN)</p>
-      <p class="item-description">
-        NORI CON ARROZ, RELLENO DE QUESO CREMA, PEPINO, CAMARÓN Y TAMPICO.
-        SALSA: ANGUILA
-      </p>
-      <div class="item-price">$150</div>
-    </div>
-  </div>
-
-  <div class="menu-item">
-    <div class="item-details">
-      <h3 class="item-name">KARLI ROLL</h3>
-      <p class="item-type">(POLLO)</p>
-      <p class="item-description">
-        ROLLO CON ARROZ, QUESO CREMA, AGUACATE, ZANAHORIA Y GUISO DE POLLO.
-        SALSA: ANGUILA Y RANCH
-      </p>
-      <div class="item-price">$150</div>
-    </div>
-  </div>
-
-  <div class="menu-item">
-    <div class="item-details">
-      <h3 class="item-name">JIMBE ROLL</h3>
-      <p class="item-type">(DEL MAR)</p>
-      <p class="item-description">
-        ROLLO CUBIERTO DE ARROZ POR FUERA, CON QUESO CREMA, AGUACATE, PEPINO,
-        CAMARÓN Y CANGREJO. SALSA: TAMPICO CON AJONJOLÍ Y ANGUILA
-      </p>
-      <div class="item-price">$150</div>
-    </div>
-  </div>
-</Content>
+<Content 
+  category={makisData.data.category}
+  items={makisData.data.items}
+  title="SUSHI BURGUER"
+  subtitle="Del mar y de la tierra al estilo mas original!"
+/>

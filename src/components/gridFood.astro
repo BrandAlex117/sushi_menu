@@ -2,83 +2,14 @@
 import "../styles/sectionsGrid.css";
 import Content from "../layouts/Content.astro";
 
-// import {menuItems} from "../scripts/menu.js";
-const menuItems = [
-  // {
-  //   category: "Sushi Rolls",
-  //   items: [
-  //     { name: "California Roll", description: "Crab, avocado, cucumber", price: "$8.95" },
-  //     { name: "Philadelphia Roll", description: "Salmon, cream cheese, cucumber", price: "$9.95" },
-  //     { name: "Spicy Tuna Roll", description: "Spicy tuna, cucumber, spicy mayo", price: "$10.95" },
-  //     { name: "Dragon Roll", description: "Eel, cucumber, avocado on top", price: "$14.95" }
-  //   ]
-  // },
-  {
-    category: "Burguers",
-    items: [
-      { name: "Chopper Burguer", 
-        ingredients: [
-          { protein: "Arrachera", description: "Pan de arroz y nori con queso crema, aguacate, guiso de arrachera y chiles toreados", sauce: "Chipotle" },
-        ],
-        price: "$200" },
-      { name: "Robin Burguer", 
-        ingredients: [
-          { protein: "Camaron y Cangrejo", description: "Relleno de queso crema, aguacate, pepino y salsa tampico", sauce: "Anguila" },
-        ], 
-        price: "$200" },
-      { name: "Ussop Burguer", 
-        ingredients: [
-          { protein: "Arrachera y Pollo", description: "Relleno de aguacate, zanahoria y queso crema", sauce: "Tampico, anguila y ajonjoli" },
-      ], price: "$200" }
-    ]
-  },
-  // {
-  //   category: "Appetizers",
-  //   items: [
-  //     { name: "Edamame", description: "Steamed soybeans with sea salt", price: "$5.95" },
-  //     { name: "Gyoza", description: "Pan-fried pork dumplings (6 pieces)", price: "$8.95" },
-  //     { name: "Miso Soup", description: "Traditional soybean paste soup", price: "$3.95" },
-  //     { name: "Seaweed Salad", description: "Wakame seaweed with sesame", price: "$6.95" }
-  //   ]
-  // }
-];
+import { getEntry } from "astro:content";
+
+const burguersData = await getEntry('menu', 'sushiBurguers');
 ---
 
-<Content>
-  <div class="div1 border-2 bg-black m-2 p-3 hidden md:block">imagen</div>
-
-  <div
-    class="div2 border-2 text-center w-full h-[10%] bg-[#f05d08] border-black p-1 flex-col center overflow-hidden"
-  >
-    <h1 class="center h-auto font-bold text-white">SUSHI BURGUER</h1>
-    <h2 class="center h-auto text-white text-nowrap">
-      Del mar y de la tierra al estilo mas original!
-    </h2>
-  </div>
-
-  <div class="div3 w-full h-[90vh] flex">
-    <ul class="w-full h-full flex flex-col justify-around items-center">
-      {
-        menuItems.filter(section => section.category === "Burguers").map((section) => (
-            section.items.map(item => (
-              <li class="w-full h-auto border-2 flex border-dashed border-gray-300">
-                <div class="w-full h-full p-4">
-                  <p class=" w-full h-auto flex flex-col text-center gap-1">
-                  <span class="titleMenu font-bold text-[#f05d08]">
-                  {item.name}
-                  </span>
-                {item.ingredients.map(ing => (
-                  <span class="textMenu text-gray-400">({ing.protein})</span>
-                  <span class="textMenu">{ing.description}</span>
-                  <span class="sauce text-nowrap">Salsa:{ing.sauce}</span>
-                  <data class="priceMenu font-bold">$200</data>
-                ))}
-                  </p>
-                </div>
-              </li>
-            ))
-        ))
-      }
-    </ul>
-  </div>
-</Content>
+<Content 
+  category={burguersData.data.category}
+  items={burguersData.data.items}
+  title="SUSHI BURGUER"
+  subtitle="Del mar y de la tierra al estilo mas original!"
+/>
