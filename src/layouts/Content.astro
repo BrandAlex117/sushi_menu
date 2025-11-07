@@ -4,29 +4,35 @@ const { category, items, title, subtitle } = Astro.props;
 
 ---
 
-<section class="w-full h-auto min-h-[100vh] p-2 color"> 
-  <div class="parent w-full h-full min-h-[100vh] overflow-hidden border-2 border-black border-dashed flex flex-col p-2 gap-2">
-      <div class="div2 border-2 text-center w-full h-[10%] bg-[#f05d08] border-black p-1 flex-col center overflow-hidden">
-        <h1 class="center h-auto font-bold text-white">{title}</h1>
-        <h2 class="center h-auto text-white text-nowrap">
+<section class="w-full h-auto min-h-[80vh] p-2 color"> 
+  <div class="parent w-full h-full overflow-hidden border-2 border-black border-dashed flex flex-col p-2 gap-2">
+      <div class="div2 border-2 text-center w-full h-[3rem] bg-[#f05d08] border-black p-1 flex-col center overflow-hidden">
+        <h1 class="center title h-auto font-bold text-white">{title}</h1>
+        <h2 class="center subtitle h-auto text-white text-nowrap">
         {subtitle}
         </h2>
       </div>
 
-  <div class="div3 w-full h-[90vh] flex">
-    <ul class="w-full h-full flex flex-col justify-around items-center">
+  <div class="div3 w-full h-full flex">
+    <ul class="w-full h-full flex flex-col gap-2 justify-around items-center">
       {
         items.map((item) => (
               <li class="w-full h-auto border-2 flex border-dashed border-gray-300">
                 <div class="w-full h-full p-4">
                   <p class=" w-full h-auto flex flex-col text-center gap-1">
-                  <span class="titleMenu font-bold text-[#f05d08]">
+                  <span class="titleMenu font-bold">
                   {item.name}
                   </span>
                 {item.ingredients.map(ing => (
-                  <span class="textMenu text-gray-400">({ing.protein})</span>
-                  <span class="textMenu">{ing.description}</span>
-                  <span class="sauce text-nowrap">Salsa:{ing.sauce}</span>
+                  <>
+                  {ing.protein && (
+                  <span class="textProtein">({ing.protein})</span>
+                  )}
+                  <span class="textDes">{ing.description}</span>
+                  {ing.sauce && (
+                  <span class="sauce text-nowrap">Salsa: {ing.sauce}</span>
+                  )}
+                  </>
                 ))}
                   <data class="priceMenu font-bold">{item.price}</data>
                   </p>

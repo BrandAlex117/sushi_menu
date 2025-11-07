@@ -3,25 +3,58 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(.8rem, 3vw, 1rem)!important;
+  font-size: clamp(.7rem, 2vw, 1rem)!important;
 }
 
 p {
   font-family: 'asianFont', sans-serif;
 }
 
+.title {
+  color: #ffffff;
+  -webkit-text-stroke: .4px #a8a7a7;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+  color: #ffffff;
+  -webkit-text-stroke: .4px #d8d8d8;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
 .titleMenu {
+  color: #f05d08;
+  -webkit-text-stroke: .9px #d8d8d8;
+  text-shadow: -1px 1px 2px rgba(116, 108, 105, 0.7);
   font-size: clamp(1rem, 6vw, 1.5rem)!important;
 }
 
-.textMenu {
+.textProtein {
+  color: #838383;
+  -webkit-text-stroke: .5px #d8d8d8;
+  text-shadow: -1px 1px 2px rgba(116, 108, 105, 0.7);
+  font-size: clamp(.8rem, 5vw, 1rem)!important;
+}
+
+.textDes {
+  color: #000000;
+  -webkit-text-stroke: .7px #d8d8d8;
+  text-shadow: -1px 1px 2px rgba(116, 108, 105, 0.7);
   font-size: clamp(.8rem, 5vw, 1rem)!important;
 }
 
 .sauce {
+  letter-spacing: 1px;
+  color: #838383;
+  -webkit-text-stroke: .2px #d8d8d8;
+  text-shadow: -1px 1px 2px rgba(116, 108, 105, 0.7);
   font-size: clamp(.7rem, 3.2vw, .9rem)!important;
 }
 
 .priceMenu {
+  letter-spacing: 1.5px;
+  color: #f05d08;
+  -webkit-text-stroke: .7px #d8d8d8;
+  text-shadow: -1px 1px 2px rgba(116, 108, 105, 0.7);
   font-size: clamp(1rem, 5vw, 1.5rem)!important;
 }

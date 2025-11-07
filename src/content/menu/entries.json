@@ -5,34 +5,41 @@
       "name": "Rollos Primavera",
       "ingredients": [
         {
-          "protein": "",
-          "description": "Orden de cinco rollitos",
-          "sauce": ""
+          "description": "Orden de cinco rollitos"
         }
       ],
       "price": "$110"
     },
     {
-      "name": "Robin Burguer",
+      "name": "Carnitas de Atun",
       "ingredients": [
         {
-          "protein": "Camaron y Cangrejo",
-          "description": "Relleno de queso crema, aguacate, pepino y salsa tampico",
-          "sauce": "Anguila"
+          "protein": "Atun",
+          "description": "Cubitos de atun fritos en rebozado tempura, paprika, acompañado de guacamole y hatumaki frita",
+          "sauce": "Guacamole"
         }
       ],
-      "price": "$200"
+      "price": "$150"
     },
     {
-      "name": "Ussop Burguer",
+      "name": "Verduras Tempura",
       "ingredients": [
         {
-          "protein": "Arrachera y Pollo",
-          "description": "Relleno de aguacate, zanahoria y queso crema",
-          "sauce": "Tampico, anguila y ajonjoli"
+          "description": "Verduras cubiertas de tempura, fritas con aderezo blanco",
+          "sauce": "Aderezo blanco"
         }
       ],
-      "price": "$200"
+      "price": "$80"
+    },
+    {
+      "name": "Surimi Roll",
+      "ingredients": [
+        {
+          "description": "Rollito de surimi relleno de queso philla, camarón y zanahoria, empanizado",
+          "sauce": "Ranch"
+        }
+      ],
+      "price": "$80"
     }
   ]
 }
