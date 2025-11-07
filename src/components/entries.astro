@@ -2,12 +2,12 @@
 import Content from "../layouts/Content.astro";
 import { getEntry } from "astro:content";
 
-const makisData = await getEntry('menu', 'entries');
+const entriesData = await getEntry('menu', 'entries');
 ---
 
 <Content 
-  category={makisData.data.category}
-  items={makisData.data.items}
+  category={entriesData.data.category}
+  items={entriesData.data.items}
   title="ENTRADAS"
   subtitle=""
 />

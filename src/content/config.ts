@@ -7,6 +7,7 @@ const menuCollection = defineCollection({
     items: z.array(z.object({
       name: z.string(),
       price: z.string(),
+      type: z.string().optional(),
       ingredients: z.array(z.object({
         protein: z.string().optional(),
         description: z.string(),

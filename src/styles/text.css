@@ -58,3 +58,102 @@ p {
   text-shadow: -1px 1px 2px rgba(116, 108, 105, 0.7);
   font-size: clamp(1rem, 5vw, 1.5rem)!important;
 }
+
+
+/* HTML: <div class="ribbon">Your text content</div> */
+.ribbon {
+  font-size: clamp(.8em, 2vw, 1rem)!important;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.ribbonCold {
+  font-size: clamp(.8em, 2vw, 1rem)!important;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.ribbon {
+
+  --f: .5em; /* control the folded part */
+  position: absolute;
+  bottom: -30px;
+  right: -40px; /* cambio de left a right */
+  line-height: 1.8;
+  padding-inline: 3em;
+  padding-bottom: var(--f);
+  border-image: conic-gradient(#0008 0 0) 51%/var(--f);
+  clip-path: polygon(
+    100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
+  transform: translate(calc((cos(90deg) - 1)*100%), -100%) rotate(-225deg); /* cambios aquí */
+  transform-origin: 100% 100%; /* cambio de 0% a 100% */
+  background-color: #c2a212; /* the main color  */
+
+  width: 40%; /* O el porcentaje que necesites */
+  white-space: nowrap; /* Evita que el texto se divida en líneas */
+  overflow: hidden; /* Oculta texto que no cabe */
+  text-overflow: ellipsis; /* Añade "..." si el texto es muy largo */
+}
+
+.ribbonCold {
+
+  color: #fff;
+
+  --f: .5em; /* control the folded part */
+  position: absolute;
+  bottom: -30px;
+  right: -40px; /* cambio de left a right */
+  line-height: 1.8;
+  padding-inline: 3em;
+  padding-bottom: var(--f);
+  border-image: conic-gradient(#0008 0 0) 51%/var(--f);
+  clip-path: polygon(
+    100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
+  transform: translate(calc((cos(90deg) - 1)*100%), -100%) rotate(-225deg); /* cambios aquí */
+  transform-origin: 100% 100%; /* cambio de 0% a 100% */
+  background-color: #19702e; /* the main color  */
+
+  width: 40%; /* O el porcentaje que necesites */
+  white-space: nowrap; /* Evita que el texto se divida en líneas */
+  overflow: hidden; /* Oculta texto que no cabe */
+  text-overflow: ellipsis; /* Añade "..." si el texto es muy largo */
+}
+
+.ribbonText {
+  display: block;
+  transform: rotate(180deg);
+  color: #ffffff;
+  -webkit-text-stroke: .4px #a8a7a7;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* HTML: <div class="ribbon">Your text content</div> */
+/* .ribbon {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+} 
+.ribbon {
+  --f: .5em; 
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1.8;
+  padding-inline: 1lh;
+  padding-bottom: var(--f);
+  border-image: conic-gradient(#0008 0 0) 51%/var(--f);
+  clip-path: polygon(
+    100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
+  transform: translate(calc((cos(45deg) - 1)*100%), -100%) rotate(-45deg);
+  transform-origin: 100% 100%;
+  background-color: #F07818;
+} */

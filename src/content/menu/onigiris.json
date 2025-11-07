@@ -1,0 +1,60 @@
+{
+  "category": "Onigiris",
+  "items": [
+    {
+      "name": "Gomu",
+      "type": "Empanizado",
+      "ingredients": [
+        {
+          "protein": "Quesos",
+          "description": "Oniguiri relleno de queso crema y mozarela"
+        }
+      ],
+      "price": "$85"
+    },
+    {
+      "name": "Mugiwara",
+      "type": "Empanizado",
+      "ingredients": [
+        {
+          "protein": "Tampico",
+          "description": "Oniguiri relleno de tampico"
+        }
+      ],
+      "price": "$85"
+    },
+    {
+      "name": "Gyojin",
+      "type": "Empanizado",
+      "ingredients": [
+        {
+          "protein": "Vegetariano",
+          "description": "Relleno de zanahoria, pepino y queso crema"
+        }
+      ],
+      "price": "$85"
+    },
+    {
+      "name": "Salmon Spicy",
+      "type": "Frio",
+      "ingredients": [
+        {
+          "protein": "Vegetariano",
+          "description": "Relleno de zanahoria, pepino y queso crema"
+        }
+      ],
+      "price": "$65"
+    },
+    {
+      "name": "Ponzu Atún",
+      "type": "Frio",
+      "ingredients": [
+        {
+          "protein": "Vegetariano",
+          "description": "Relleno de zanahoria, pepino y queso crema"
+        }
+      ],
+      "price": "$65"
+    }
+  ]
+}
