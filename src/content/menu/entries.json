@@ -1,0 +1,38 @@
+{
+  "category": "Makis",
+  "items": [
+    {
+      "name": "Rollos Primavera",
+      "ingredients": [
+        {
+          "protein": "",
+          "description": "Orden de cinco rollitos",
+          "sauce": ""
+        }
+      ],
+      "price": "$110"
+    },
+    {
+      "name": "Robin Burguer",
+      "ingredients": [
+        {
+          "protein": "Camaron y Cangrejo",
+          "description": "Relleno de queso crema, aguacate, pepino y salsa tampico",
+          "sauce": "Anguila"
+        }
+      ],
+      "price": "$200"
+    },
+    {
+      "name": "Ussop Burguer",
+      "ingredients": [
+        {
+          "protein": "Arrachera y Pollo",
+          "description": "Relleno de aguacate, zanahoria y queso crema",
+          "sauce": "Tampico, anguila y ajonjoli"
+        }
+      ],
+      "price": "$200"
+    }
+  ]
+}
