@@ -25,40 +25,34 @@ import Onigiri from '../components/onigiriSection.astro';
 	<body>
     <div class="menu-container">
         <!-- Header -->
-        <div class="header">
+        <header class="header">
           <Image 
             class="logo"
             src={chopperImage}
             alt="Chopper logo Sushi Culishi"
           />          
           <div class="sunburst"></div>
-            
-        </div>
+        </header>
 
-        <Entries />
-        
-        <Onigiri />
-        
-        <GridFood />
+        <main>
+          
+          <Entries />
+          
+          <Onigiri />
+          
+          <GridFood />
 
-        <div class="w-[130%] ">
-          <Image 
-            class="w-[60%] h-[100px] relative right-[60%] z-20 overflow-x-auto"
-            src={chopperImage}
-            alt="Chopper logo Sushi Culishi"
-          />   
-        </div>
-        
-        <!-- Makis Rolls Section -->  
-         
-        <MakisFood />
-        
-        <!-- Onigiris Section -->
-        
-        
-        <!-- Extras Section -->
-        
-        <!-- Instagram Section -->
+          <div class="w-[130%] ">
+            <Image 
+              class="w-[60%] h-[100px] relative right-[60%] z-20 overflow-x-auto"
+              src={chopperImage}
+              alt="Chopper logo Sushi Culishi"
+            />   
+          </div>
+          
+          <MakisFood />
+
+        </main>
 
         <!-- <Footer/> -->
         

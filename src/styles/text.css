@@ -84,11 +84,15 @@ p {
 .ribbon {
 
   --f: .5em; /* control the folded part */
+  --container-scale: 1; /* Puedes ajustarlo con JS si necesitas */
+
+ --offset-percent: .4;
   position: absolute;
-  bottom: -30px;
-  right: -40px; /* cambio de left a right */
+  bottom: clamp(-30px, 1%, -105px);
+  right: clamp(-40px, 1%, -105px);
+
   line-height: 1.8;
-  padding-inline: 3em;
+  padding-inline: clamp(0.5em, 2vw, 1.5em);
   padding-bottom: var(--f);
   border-image: conic-gradient(#0008 0 0) 51%/var(--f);
   clip-path: polygon(
@@ -97,7 +101,8 @@ p {
   transform-origin: 100% 100%; /* cambio de 0% a 100% */
   background-color: #c2a212; /* the main color  */
 
-  width: 40%; /* O el porcentaje que necesites */
+  width: clamp(50px, 62%, 130px);
+  font-size: clamp(0.6rem, 1.5vw, 1rem); /* Texto escalable con límites */
   white-space: nowrap; /* Evita que el texto se divida en líneas */
   overflow: hidden; /* Oculta texto que no cabe */
   text-overflow: ellipsis; /* Añade "..." si el texto es muy largo */
@@ -109,8 +114,8 @@ p {
 
   --f: .5em; /* control the folded part */
   position: absolute;
-  bottom: -30px;
-  right: -40px; /* cambio de left a right */
+  bottom: clamp(-30px, 1%, -105px);
+  right: clamp(-40px, 1%, -105px);
   line-height: 1.8;
   padding-inline: 3em;
   padding-bottom: var(--f);
@@ -121,7 +126,7 @@ p {
   transform-origin: 100% 100%; /* cambio de 0% a 100% */
   background-color: #19702e; /* the main color  */
 
-  width: 40%; /* O el porcentaje que necesites */
+  width: clamp(50px, 62%, 130px);
   white-space: nowrap; /* Evita que el texto se divida en líneas */
   overflow: hidden; /* Oculta texto que no cabe */
   text-overflow: ellipsis; /* Añade "..." si el texto es muy largo */
@@ -136,24 +141,3 @@ p {
 }
 
 /* HTML: <div class="ribbon">Your text content</div> */
-/* .ribbon {
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff;
-} 
-.ribbon {
-  --f: .5em; 
-  
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 1.8;
-  padding-inline: 1lh;
-  padding-bottom: var(--f);
-  border-image: conic-gradient(#0008 0 0) 51%/var(--f);
-  clip-path: polygon(
-    100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
-  transform: translate(calc((cos(45deg) - 1)*100%), -100%) rotate(-45deg);
-  transform-origin: 100% 100%;
-  background-color: #F07818;
-} */
