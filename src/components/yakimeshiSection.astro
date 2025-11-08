@@ -1,0 +1,13 @@
+---
+import Content from "../layouts/Content.astro";
+import { getEntry } from "astro:content";
+
+const yakimeshiData = await getEntry('menu', 'yakimeshi');
+---
+
+<Content 
+  category={yakimeshiData.data.category}
+  items={yakimeshiData.data.items}
+  title="Yakimeshi"
+  subtitle=""
+/>

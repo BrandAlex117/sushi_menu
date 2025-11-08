@@ -99,16 +99,37 @@ p {
     100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
   transform: translate(calc((cos(90deg) - 1)*100%), -100%) rotate(-225deg); /* cambios aquí */
   transform-origin: 100% 100%; /* cambio de 0% a 100% */
-  background-color: #c2a212; /* the main color  */
+  background-color: #e9ae0d; /* the main color  */
 
   width: clamp(50px, 62%, 130px);
   font-size: clamp(0.6rem, 1.5vw, 1rem); /* Texto escalable con límites */
   white-space: nowrap; /* Evita que el texto se divida en líneas */
   overflow: hidden; /* Oculta texto que no cabe */
   text-overflow: ellipsis; /* Añade "..." si el texto es muy largo */
+
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    animation: pulse 2s infinite;
+
+  /* @keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }    */
 }
 
-.ribbonCold {
+  
+  .ribbonCold {
 
   color: #fff;
 
