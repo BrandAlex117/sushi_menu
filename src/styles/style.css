@@ -44,7 +44,7 @@ body {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  background: white;
+  background: rgba(0, 0, 0, 0.116);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
