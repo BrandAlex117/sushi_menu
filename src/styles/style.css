@@ -20,8 +20,6 @@ html {
   font-size: 16px;
 }
 
-
-
 body {
   width: 100vw;
   height: auto;
@@ -70,7 +68,7 @@ body {
     from 0deg,
     #ff6600 0deg 10deg,
     #ffffff 10deg 20deg
-);
+    );
   opacity: .8;
   border-radius: 50%;
 }

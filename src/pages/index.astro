@@ -6,10 +6,13 @@ import Entries from '../components/entries.astro';
 import GridFood from '../components/gridFood.astro';
 import MakisFood from '../components/makisSection.astro'; 
 import YakimeshiFood from '../components/yakimeshiSection.astro';
-import { Image } from 'astro:assets';
-import chopperImage from '../images/chopperLogoEdit.png'
 import Footer from '../components/footer.astro';
 import Onigiri from '../components/onigiriSection.astro';
+
+import { Image } from 'astro:assets';
+import chopperImage from '../images/chopperLogoEdit.png';
+import postersImage from '../images/postersAllBlue.jpg';
+
 
 ---
 
@@ -23,47 +26,47 @@ import Onigiri from '../components/onigiriSection.astro';
 		<title>Sushi Culishi - Authentic Japanese Cuisine</title>
 		
 	</head>
-	<body>
-    <div class="menu-container">
+	<body class="relative">
+    <div class="menu-container relative">
         <!-- Header -->
-        <header class="header">
-          <Image 
-            class="logo"
-            src={chopperImage}
-            alt="Chopper logo Sushi Culishi"
-          />          
-          <div class="sunburst"></div>
-        </header>
+<header class="header">
+  <Image 
+    class="logo"
+    src={chopperImage}
+    alt="Chopper logo Sushi Culishi"
+  />          
+  <div class="sunburst"></div>
+</header>
 
-<<<<<<< HEAD
-        <main>
-          
-          <Entries />
-          
-          <Onigiri />
-          
-          <GridFood />
-=======
-        <Entries />
-        
-        <Onigiri />
+<div class="background fixed inset-0">
+  <Image
+    src={postersImage}
+    alt="background"
+    class='backgroundImage bg-no-repeat bg-cover bg-center w-full h-[100%] object-cover object-center'
+  />
+</div>
 
-        <YakimeshiFood />
-        
-        <GridFood />
->>>>>>> ab9055aed19399d4b3d75bdc1e27ab5355d4f081
+<main class="w-full h-full  ">
+  
+  <Entries />
+  
+  <Onigiri />
+  
+  <YakimeshiFood />
 
-          <div class="w-[130%] ">
-            <Image 
-              class="w-[60%] h-[100px] relative right-[60%] z-20 overflow-x-auto"
-              src={chopperImage}
-              alt="Chopper logo Sushi Culishi"
-            />   
-          </div>
-          
-          <MakisFood />
+  <GridFood />
 
-        </main>
+  <div class="w-[130%] ">
+    <Image 
+      class="w-[60%] h-[100px] relative right-[60%] z-20 overflow-x-auto"
+      src={chopperImage}
+      alt="Chopper logo Sushi Culishi"
+    />   
+  </div>
+  
+  <MakisFood />
+
+</main>
 
         <!-- <Footer/> -->
         
