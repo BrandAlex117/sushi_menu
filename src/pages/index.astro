@@ -23,50 +23,54 @@ import postersImage from '../images/postersAllBlue.jpg';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Sushi Culishi - Authentic Japanese Cuisine</title>
+		<title>All Blue Sushi - Authentic Japanese Cuisine</title>
 		
 	</head>
 	<body class="relative">
     <div class="menu-container relative">
         <!-- Header -->
-<header class="header">
-  <Image 
-    class="logo"
-    src={chopperImage}
-    alt="Chopper logo Sushi Culishi"
-  />          
-  <div class="sunburst"></div>
-</header>
+      <header class="header">
+        <Image 
+          class="logo"
+          src={chopperImage}
+          alt="Chopper logo Sushi Culishi"
+        />          
+        <div class="sunburst"></div>
+      </header>
 
-<div class="background fixed w-[800px] bottom-2  z-[-1]">
-  <Image
-    src={postersImage}
-    alt="background"
-    class='backgroundImage bg-no-repeat bg-cover bg-center w-full h-[100%] object-cover object-center'
-  />
-</div>
+      <div class="backgroundContainer ">
+        <div class="bgStick">
+          <Image
+          src={postersImage}
+          alt="background"
+          quality={85}
+          format="webp"
+          class='backgroundImage w-full h-full'
+        />
+        </div>
+      </div>
 
-<main class="w-full h-full">
-  
-  <Entries />
-  
-  <Onigiri />
-  
-  <YakimeshiFood />
+      <main class="w-full h-full">
+        
+        <Entries />
+        
+        <Onigiri />
+        
+        <YakimeshiFood />
 
-  <GridFood />
+        <GridFood />
 
-  <div class="w-[130%] ">
-    <Image 
-      class="w-[60%] h-[100px] relative right-[60%] z-20 overflow-x-auto"
-      src={chopperImage}
-      alt="Chopper logo Sushi Culishi"
-    />   
-  </div>
-  
-  <MakisFood />
+        <div class="w-[130%] ">
+          <Image 
+            class="w-[60%] h-[100px] relative right-[60%] z-20 overflow-x-auto"
+            src={chopperImage}
+            alt="Chopper logo Sushi Culishi"
+          />   
+        </div>
+        
+        <MakisFood />
 
-</main>
+      </main>
 
         <!-- <Footer/> -->
         
