@@ -4,6 +4,8 @@ const menuCollection = defineCollection({
   type: 'data',
   schema: z.object({
     category: z.string(),
+    title: z.string().optional(),
+    subtitle: z.string().optional(),
     items: z.array(z.object({
       name: z.string(),
       price: z.string(),

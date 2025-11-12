@@ -1,0 +1,25 @@
+---
+import Content from "../layouts/Content.astro";
+import { getCollection } from "astro:content";
+
+export const menuData = await getCollection("menu");
+
+const categoryOrder = ["Entries", "Oniguiris", "Yakimeshi", "Especialties", "Desserts", "Makis", "Burguers"];
+
+const OrderMenu = categoryOrder
+  .map(position => menuData.find(entry => entry.data.category === position))
+  .filter(Boolean);
+---
+{
+  OrderMenu.map((menuFile) => {
+
+    return (
+      <Content
+        category={menuFile?.data.category}
+        items={menuFile?.data.items}
+        title={menuFile?.data.title}
+        subtitle={menuFile?.data.subtitle}
+      />
+    );
+  })
+}

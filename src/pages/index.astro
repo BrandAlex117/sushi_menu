@@ -2,12 +2,7 @@
 import '../styles/style.css';
 import '../styles/sectionsGrid.css';
 import '../styles/text.css';
-import Entries from '../components/entries.astro';
-import GridFood from '../components/gridFood.astro';
-import MakisFood from '../components/makisSection.astro'; 
-import YakimeshiFood from '../components/yakimeshiSection.astro';
-import Footer from '../components/footer.astro';
-import Onigiri from '../components/onigiriSection.astro';
+import Menu from '../components/menuContent.astro';
 
 import { Image } from 'astro:assets';
 import chopperImage from '../images/chopperLogoEdit.png';
@@ -50,23 +45,7 @@ import postersImage from '../images/postersAllBlue.jpg';
 
       <main class="w-full h-full">
         
-        <Entries />
-        
-        <Onigiri />
-        
-        <YakimeshiFood />
-
-        <GridFood />
-
-        <div class="w-[130%] ">
-          <Image 
-            class="w-[60%] h-[100px] relative right-[60%] z-20 overflow-x-auto"
-            src={chopperImage}
-            alt="Chopper logo Sushi Culishi"
-          />   
-        </div>
-        
-        <MakisFood />
+        <Menu />
 
       </main>
 
