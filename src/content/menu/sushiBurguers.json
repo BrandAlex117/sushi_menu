@@ -1,38 +1,18 @@
 {
   "category": "Burguers",
+  "title": "Shusi Burguers",
+  "subtitle": "La mejor opcion para los amantes de las burguers",
   "items": [
-    {
-      "name": "Chopper Burguer",
-      "ingredients": [
-        {
-          "protein": "Arrachera",
-          "description": "Pan de arroz y nori con queso crema, aguacate, guiso de arrachera y chiles toreados",
-          "sauce": "Chipotle"
-        }
-      ],
-      "price": "$200"
-    },
-    {
-      "name": "Robin Burguer",
-      "ingredients": [
-        {
-          "protein": "Camaron y Cangrejo",
-          "description": "Relleno de queso crema, aguacate, pepino y salsa tampico",
-          "sauce": "Anguila"
-        }
-      ],
-      "price": "$200"
-    },
     {
       "name": "Ussop Burguer",
       "ingredients": [
         {
-          "protein": "Arrachera y Pollo",
-          "description": "Relleno de aguacate, zanahoria y queso crema",
-          "sauce": "Tampico, anguila y ajonjoli"
+          "protein": "Arrachera, pollo, tocino",
+          "description": "Bola de arroz de medio kilorellena de diferentes ingredientes y empanizado, servida con hamburguesa en dos mitades Nori, arrachera, pollo, tocino, queso crema y queso gratinado",
+          "sauce": "Chipotle y anguila"
         }
       ],
-      "price": "$200"
+      "price": "$210"
     }
   ]
 }

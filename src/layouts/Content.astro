@@ -2,6 +2,8 @@
 
 const { category, items, title, subtitle } = Astro.props;
 
+const hasSubcategories = items[0]?.content !== undefined;
+
 ---
 
 <section class="w-full h-auto min-h-[80vh] p-2 color"> 
@@ -15,8 +17,8 @@ const { category, items, title, subtitle } = Astro.props;
 
   <div class="div3 w-full h-full flex">
     <ul class="w-full h-full flex flex-col gap-2 justify-around items-center">
-      {
-        items.map((item) => (
+      {hasSubcategories ? (
+        items.content.map((item) => (
               <li class="w-full h-auto border-2 flex border-dashed border-gray-300">
                 <div class="menuBlock w-full h-auto p-4 relative">
                   <p class=" w-full h-auto flex flex-col relative text-center gap-1">
@@ -41,7 +43,33 @@ const { category, items, title, subtitle } = Astro.props;
 
                 </div>
               </li>
-            ))
+            )))
+       : (items.map((item) => (
+              <li class="w-full h-auto border-2 flex border-dashed border-gray-300">
+                <div class="menuBlock w-full h-auto p-4 relative">
+                  <p class=" w-full h-auto flex flex-col relative text-center gap-1">
+                  <span class="titleMenu font-bold">
+                  {item.name}
+                  </span>
+                {item.ingredients.map(ing => (
+                  <>
+                  {ing.protein && (
+                  <span class="textProtein">({ing.protein})</span>
+                  )}
+                  <span class="textDes">{ing.description}</span>
+                  {ing.sauce && (
+                  <span class="sauce text-nowrap">Salsa: {ing.sauce}</span>
+                  )}
+                  </>
+                ))}
+                  <data class="priceMenu font-bold">{item.price}</data>
+                  </p>
+                  {item.type == "Empanizado" && item.type && (<span class="ribbon"><p class="ribbonText">{item.type}</p></span>)}
+                  {item.type == "Frio" && item.type && (<span class="ribbonCold"><p class="ribbonText">{item.type}</p></span>)}
+
+                </div>
+              </li>
+            )))
       }
     </ul>
   </div>

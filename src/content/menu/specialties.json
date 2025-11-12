@@ -1,15 +1,18 @@
 {
-  "category": "Specialties",
+  "category": "Especialties",
+  "title": "Especialidades",
+  "subtitle": "Hechos con todo el cariño de la casa",
   "items": [
     {
-      "name": "Gohan",
+      "name": "Tiradito de salmon o atun",
       "ingredients": [
         {
-          "description": "Arroz al vapor con cebollin",
-          "sauce": "Chipotle"
+          "protein": "Atún",
+          "description": "Laminas de pescado fresco servidas con salsa de la casa a base de soja y aceite de ajonjoli",
+          "sauce": "salsa de la casa"
         }
       ],
-      "price": "$65"
+      "price": "$180"
     },
     {
       "name": "Frito",

@@ -1,7 +1,12 @@
 {
   "category": "Makis",
+  "title": "Makis",
+  "subtitle": "Deliciosos makis hechos con ingredientes frescos y de calidad",
   "items": [
     {
+      "type": "clasicos", 
+      "content": [
+        {
       "name": "Chopper Burguer",
       "ingredients": [
         {
@@ -33,6 +38,84 @@
         }
       ],
       "price": "$200"
+    }
+      ]
+    },
+    {
+      "type": "clasicos", 
+      "content": [
+        {
+      "name": "Chopper Burguer",
+      "ingredients": [
+        {
+          "protein": "Arrachera",
+          "description": "Pan de arroz y nori con queso crema, aguacate, guiso de arrachera y chiles toreados",
+          "sauce": "Chipotle"
+        }
+      ],
+      "price": "$200"
+    },
+    {
+      "name": "Robin Burguer",
+      "ingredients": [
+        {
+          "protein": "Camaron y Cangrejo",
+          "description": "Relleno de queso crema, aguacate, pepino y salsa tampico",
+          "sauce": "Anguila"
+        }
+      ],
+      "price": "$200"
+    },
+    {
+      "name": "Ussop Burguer",
+      "ingredients": [
+        {
+          "protein": "Arrachera y Pollo",
+          "description": "Relleno de aguacate, zanahoria y queso crema",
+          "sauce": "Tampico, anguila y ajonjoli"
+        }
+      ],
+      "price": "$200"
+    }
+      ]
+    },
+    {
+      "type": "clasicos", 
+      "content": [
+        {
+      "name": "Chopper Burguer",
+      "ingredients": [
+        {
+          "protein": "Arrachera",
+          "description": "Pan de arroz y nori con queso crema, aguacate, guiso de arrachera y chiles toreados",
+          "sauce": "Chipotle"
+        }
+      ],
+      "price": "$200"
+    },
+    {
+      "name": "Robin Burguer",
+      "ingredients": [
+        {
+          "protein": "Camaron y Cangrejo",
+          "description": "Relleno de queso crema, aguacate, pepino y salsa tampico",
+          "sauce": "Anguila"
+        }
+      ],
+      "price": "$200"
+    },
+    {
+      "name": "Ussop Burguer",
+      "ingredients": [
+        {
+          "protein": "Arrachera y Pollo",
+          "description": "Relleno de aguacate, zanahoria y queso crema",
+          "sauce": "Tampico, anguila y ajonjoli"
+        }
+      ],
+      "price": "$200"
+    }
+      ]
     }
   ]
 }
