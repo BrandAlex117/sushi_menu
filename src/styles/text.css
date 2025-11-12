@@ -11,8 +11,9 @@ p {
 }
 
 .title {
-  color: #ffffff;
-  -webkit-text-stroke: .4px #a8a7a7;
+  color: #ebebeb;
+  font-size: clamp(1rem, 6vw, 1.5rem)!important;
+  -webkit-text-stroke: .6px #186c8b;
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.7);
 }
 

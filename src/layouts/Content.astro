@@ -6,9 +6,9 @@ const { category, items, title, subtitle } = Astro.props;
 
 <section class="w-full h-auto min-h-[80vh] p-2 color"> 
   <div class="parent w-full h-full overflow-hidden border-2 border-gray-300 border-dashed flex flex-col p-2 gap-2">
-      <div class="div2 border-2 text-center w-full h-[3rem] bg-[#f05d08] border-gray-300 p-1 flex-col center overflow-hidden">
-        <h1 class="center title h-auto font-bold text-white">{title}</h1>
-        <h2 class="center subtitle h-auto text-white text-nowrap">
+      <div class="titleContent border-2 text-center w-full h-[3rem] border-gray-300 p-1 flex-col center overflow-hidden">
+        <h1 class="center title h-auto font-bold ">{title}</h1>
+        <h2 class="center subtitle h-auto text-nowrap">
         {subtitle}
         </h2>
       </div>

@@ -1,0 +1,46 @@
+{
+  "category": "Desserts",
+  "items": [
+    {
+      "name": "Tiradito de salmon o atun",
+      "ingredients": [
+        {
+          "protein": "Atún",
+          "description": "Laminas de pescado fresco servidas con salsa de la casa a base de soja y aceite de ajonjoli",
+          "sauce": "salsa de la casa"
+        }
+      ],
+      "price": "$180"
+    },
+    {
+      "name": "Frito",
+      "ingredients": [
+        {
+          "protein": "Pollo, Arrachera, Camarón, Mixto",
+          "description": "Arroz frito con vegetales o proteina a elegir"
+        }
+      ],
+      "price": "$100"
+    },
+    {
+      "name": "Mixto",
+      "ingredients": [
+        {
+          "protein": "Pollo, Arrachera, Camarón, Mixto",
+          "description": "Arroz frito con vegetales o proteina a elegir"
+        }
+      ],
+      "price": "$120"
+    },
+    {
+      "name": "Bowl Going Berry",
+      "ingredients": [
+        {
+          "protein": "tocino y tampico",
+          "description": "Porcion mas grande de yaki mixto (cama de chipotle, tampico, queso crema, aguacate y tocino)"
+        }
+      ],
+      "price": "$180"
+    }
+  ]
+}

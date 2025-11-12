@@ -35,8 +35,14 @@ body {
   justify-content: center;
 }
 
+:root {
+  --orange: #ff6600;
+  --orange-all: #e8a91d;
+  --blue-all: #186c8b;
+}
+
 .orange {
-  color: #ff6600;
+  color: var(--orange);
 }
 
 .menu-container {
@@ -46,6 +52,13 @@ body {
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.116);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/postersAllBlue.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 .header {
@@ -109,7 +122,7 @@ body {
   z-index: 10;
 }
 
-.backgroundContainer {
+/* .backgroundContainer {
     position: absolute;
     top: 0;
     left: 0;
@@ -121,7 +134,7 @@ body {
 }
 
 .backgroundImage {
-    position: sticky; /* Esto hace que se quede fijo */
+    position: sticky; 
     top: 0;
     width: 100%;
     height: 100vh;
@@ -131,10 +144,14 @@ body {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
 
+} */
+
+.titleContent {
+  background: linear-gradient(90deg,rgba(250, 129, 0, 1) 0%, rgba(227, 157, 66, 1) 51%, rgba(250, 129, 0, 1) 100%);  
 }
 
 .menuBlock {
-  background-color: #ff66003f;
+  background-color: #00000060;
 }
 
 .section {
