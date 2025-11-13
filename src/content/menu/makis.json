@@ -7,87 +7,147 @@
       "type": "clasicos", 
       "content": [
         {
-      "name": "Chopper Burguer",
+      "name": "Monet",
       "ingredients": [
         {
-          "protein": "Arrachera",
-          "description": "Pan de arroz y nori con queso crema, aguacate, guiso de arrachera y chiles toreados",
-          "sauce": "Chipotle"
-        }
-      ],
-      "price": "$200"
-    },
-    {
-      "name": "Robin Burguer",
-      "ingredients": [
-        {
-          "protein": "Camaron y Cangrejo",
-          "description": "Relleno de queso crema, aguacate, pepino y salsa tampico",
+          "protein": "Proteina a elegir",
+          "description": "Forrado de aguacate y por dentro queso crema, proteina de su eleccion y salsa anguila",
           "sauce": "Anguila"
         }
       ],
-      "price": "$200"
+      "price": "$99"
     },
     {
-      "name": "Ussop Burguer",
+      "name": "California",
       "ingredients": [
         {
-          "protein": "Arrachera y Pollo",
-          "description": "Relleno de aguacate, zanahoria y queso crema",
-          "sauce": "Tampico, anguila y ajonjoli"
+          "protein": "Proteina a elegir",
+          "description": "Forrado de Ajonjolí y por dentro pepino y aguacate"
         }
       ],
-      "price": "$200"
+      "price": "$99"
+    },
+    {
+      "name": "Bepo Maki",
+      "ingredients": [
+        {
+          "protein": "Proteina a elegir",
+          "description": "Forrado de queso crema y ajonjolí y por dentro pepino y aguacate"
+        }
+      ],
+      "price": "$99"
+    },
+    {
+      "name": "Marino",
+      "ingredients": [
+        {
+          "protein": "Proteina a elegir",
+          "description": "Forrado de pepino y por dentro queso crema, pepino y aguacate",
+          "sauce": "Anguila"
+        }
+      ],
+      "price": "$99"
     }
       ]
     },
     {
-      "type": "clasicos", 
+      "type": "De la casa", 
       "content": [
         {
-      "name": "Chopper Burguer",
+      "name": "Tontata Maki",
       "ingredients": [
         {
-          "protein": "Arrachera",
-          "description": "Pan de arroz y nori con queso crema, aguacate, guiso de arrachera y chiles toreados",
-          "sauce": "Chipotle"
-        }
-      ],
-      "price": "$200"
-    },
-    {
-      "name": "Robin Burguer",
-      "ingredients": [
-        {
-          "protein": "Camaron y Cangrejo",
-          "description": "Relleno de queso crema, aguacate, pepino y salsa tampico",
+          "protein": "Camarón",
+          "description": "Forrado de kakiage y por dentro queso crema, aguacate, camarón tempura",
           "sauce": "Anguila"
         }
       ],
-      "price": "$200"
+      "price": "$120"
     },
     {
-      "name": "Ussop Burguer",
+      "name": "Kitetsu",
       "ingredients": [
         {
-          "protein": "Arrachera y Pollo",
-          "description": "Relleno de aguacate, zanahoria y queso crema",
-          "sauce": "Tampico, anguila y ajonjoli"
+          "protein": "Camarón",
+          "description": "Forrado de aguacate y mango, por dentro queso crema, aguacate y camarón tempura",
+          "sauce": "Anguila"
         }
       ],
-      "price": "$200"
+      "price": "$135"
+    },
+    {
+      "name": "Sabo",
+      "ingredients": [
+        {
+          "protein": "Camarón",
+          "description": "Forrado de mango y puntos de tampico y por dentro queso crema, aguacate y camarón",
+          "sauce": "Chipotle"
+        }
+      ],
+      "price": "$150"
+    },
+    {
+      "name": "Ace",
+      "ingredients": [
+        {
+          "protein": "Arrachera",
+          "description": "Forrado de cheetos flaming y por dentro arrachera, gouda y zanahoria",
+          "sauce": "Chipotle"
+        }
+      ],
+      "price": "$130"
+    },
+    {
+      "name": "Green Bull",
+      "ingredients": [
+        {
+          "protein": "Vegetariano",
+          "description": "Forrado de queso crema y cebollín y por dentro mango, pepino y aguacate"
+        }
+      ],
+      "price": "$110"
+    },
+    {
+      "name": "Green Line",
+      "ingredients": [
+        {
+          "protein": "Salmón, Atún, Camarón y Cangrejo",
+          "description": "Queso crema, aguacate y pepino: forrado de aguacate, mango, salmón, atún, camarón y cangrejo con besos de tampico"
+        }
+      ],
+      "price": "$170"
+    },
+    {
+      "name": "Nika",
+      "ingredients": [
+        {
+          "protein": "Salmón",
+          "description": "Forrado completamente de salmón fresco, relleno de aguacate, queso crema y pepino con topping de cebollin"
+        }
+      ],
+      "price": "$150"
+    },
+    {
+      "name": "Eustass kido",
+      "ingredients": [
+        {
+          "protein": "atún",
+          "description": "Forrado completamente de atún fresco y relleno de queso crema, pino y aguacate"
+        }
+      ],
+      "price": "$150"
     }
       ]
     },
     {
-      "type": "clasicos", 
+      "type": "Empanizados", 
       "content": [
         {
-      "name": "Chopper Burguer",
+      "name": "Luffy",
       "ingredients": [
         {
-          "protein": "Arrachera",
-          "description": "Pan de arroz y nori con queso crema, aguacate, guiso de arrachera y chiles toreados",
+          "protein": "Arrachera y Camarón ",
+          "description": "",
           "sauce": "Chipotle"
         }
       ],

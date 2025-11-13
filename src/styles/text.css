@@ -6,12 +6,9 @@ h2 {
   font-size: clamp(.7rem, 2vw, 1rem)!important;
 }
 
-p {
-  font-family: 'asianFont', sans-serif;
-}
-
 .title {
   color: #ebebeb;
+  font-family: 'asianFont', sans-serif;
   font-size: clamp(1rem, 6vw, 1.5rem)!important;
   -webkit-text-stroke: .6px #186c8b;
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.7);
@@ -23,7 +20,17 @@ p {
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.7);
 }
 
+.subCategory {
+  font-family: "asianFont", sans-serif;
+  color: #fafafa;
+  letter-spacing: 1.2px;
+  -webkit-text-stroke: .9px #d8d8d8;
+  text-shadow: -1px 1px 2px rgba(116, 108, 105, 0.7);
+  font-size: clamp(1rem, 6vw, 1.5rem)!important;
+}
+
 .titleMenu {
+  font-family: "asianFont", sans-serif;
   color: #fafafa;
   letter-spacing: 1.2px;
   -webkit-text-stroke: .9px #d8d8d8;
@@ -32,22 +39,23 @@ p {
 }
 
 .textProtein {
-  color: #838383;
+  color: #c3c3c3;
+  font-family: 'japanFont', sans-serif;
   letter-spacing: 1.1px;
-  -webkit-text-stroke: .5px #d8d8d8;
   text-shadow: -1px 1px 2px rgba(116, 108, 105, 0.7);
   font-size: clamp(.8rem, 5vw, 1.5rem)!important;
 }
 
 .textDes {
-  color: #000000;
+  color: #ffffff;
+  font-family: 'japanFont', sans-serif;
   letter-spacing: 1.1px;
-  -webkit-text-stroke: .7px #d8d8d8;
   text-shadow: -1px 1px 2px rgba(116, 108, 105, 0.7);
   font-size: clamp(.8rem, 5vw, 1.5rem)!important;
 }
 
 .sauce {
+  font-family: 'japanFont', sans-serif;
   letter-spacing: 1px;
   color: #838383;
   -webkit-text-stroke: .2px #d8d8d8;
@@ -56,6 +64,7 @@ p {
 }
 
 .priceMenu {
+  font-family: 'asianFont', sans-serif;
   letter-spacing: 1px;
   color: #ffffff;
   -webkit-text-stroke: .7px #d8d8d8;

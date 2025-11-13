@@ -8,6 +8,11 @@
   src: url(../styles/fonts/go3v2.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'japanFont';
+  src: url(../styles/fonts/JapanWave.ttf) format('truetype');
+}
+
 *  {
   margin: 0;
   padding: 0;
@@ -25,7 +30,6 @@ body {
   height: auto;
   margin: 0;
   padding: 0;
-  font-family: 'asianFont', sans-serif;
   background-color: #f5f5f5;
   color: #333;
   line-height: 1.4;
@@ -147,8 +151,12 @@ body {
 } */
 
 .titleContent {
-  background: linear-gradient(90deg,rgba(250, 129, 0, 1) 0%, rgba(227, 157, 66, 1) 51%, rgba(250, 129, 0, 1) 100%);  
+  background: linear-gradient(90deg,#fa8100 0%, rgba(227, 157, 66, 1) 51%, rgba(250, 129, 0, 1) 100%);  
 }
+
+.makiContent {
+  background-color: var(--blue-all);
+} 
 
 .menuBlock {
   background-color: #00000060;
