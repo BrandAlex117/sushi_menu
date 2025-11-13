@@ -72,6 +72,13 @@ h2 {
   font-size: clamp(1rem, 5vw, 1.5rem)!important;
 }
 
+.priceMenu::before {
+  content: '';
+  display: block;
+  width: 80%;
+  border-bottom: 2px dotted #d8d8d8;
+}
+
 
 /* HTML: <div class="ribbon">Your text content</div> */
 .ribbon {
@@ -110,7 +117,7 @@ h2 {
   border-image: conic-gradient(#0008 0 0) 51%/var(--f);
   clip-path: polygon(
     100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
-  transform: translate(calc((cos(90deg) - 1)*100%), -100%) rotate(-225deg); /* cambios aquí */
+  transform: translate(calc((cos(90deg) - 1)*100%), -100%) rotate(135deg); /* cambios aquí */
   transform-origin: 100% 100%; /* cambio de 0% a 100% */
   background-color: #f1a10b; /* the main color  */
 
