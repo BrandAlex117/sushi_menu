@@ -16,8 +16,10 @@ h2 {
 
 .subtitle {
   color: #ffffff;
+  font-family: "japanFont", sans-serif;
   -webkit-text-stroke: .4px #d8d8d8;
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.7);
+  font-size: clamp(.8rem, 3vw, 1.2rem)!important;
 }
 
 .subCategory {
@@ -60,7 +62,7 @@ h2 {
   color: #838383;
   -webkit-text-stroke: .2px #d8d8d8;
   text-shadow: -1px 1px 2px rgba(116, 108, 105, 0.7);
-  font-size: clamp(.7rem, 3.2vw, 1.2rem)!important;
+  font-size: clamp(.7rem, 4vw, 1.2rem)!important;
 }
 
 .priceMenu {
@@ -72,12 +74,9 @@ h2 {
   font-size: clamp(1rem, 5vw, 1.5rem)!important;
 }
 
-.priceMenu::before {
-  content: '';
-  display: block;
-  width: 80%;
-  border-bottom: 2px dotted #d8d8d8;
-}
+/* . {
+  
+} */
 
 
 /* HTML: <div class="ribbon">Your text content</div> */

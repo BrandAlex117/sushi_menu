@@ -154,9 +154,17 @@ body {
   background: linear-gradient(90deg,#fa8100 0%, rgba(227, 157, 66, 1) 51%, rgba(250, 129, 0, 1) 100%);  
 }
 
-.makiContent {
-  background-color: var(--blue-all);
+.classic {
+  background-color: rgba(24, 109, 140, 0.8);
 } 
+
+.home {
+  background-color: rgba(160, 61, 54, 0.8);
+}
+
+.panko {
+  background-color: rgb(232, 169, 29, 0.8);
+}
 
 .menuBlock {
   background-color: #00000060;
